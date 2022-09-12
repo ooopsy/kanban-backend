@@ -50,7 +50,5 @@ public class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
         source.registerCorsConfiguration("/**", configuration);
         return source;
     }
-
-	
 	
 }

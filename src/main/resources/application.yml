@@ -11,7 +11,7 @@ spring:
       ddl-auto: update
 
 keycloak:
-  auth-server-url: https://sso.sad-waterdeer.com/auth
+  auth-server-url: https://sso.sad-waterdeer.com/auth   
   realm: TEST
   bearer-only: true
   resource: kanban-backend
