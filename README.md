@@ -1,0 +1,1 @@
+database and keycloak settings are in application.yml   
