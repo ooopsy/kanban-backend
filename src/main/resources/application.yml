@@ -12,9 +12,9 @@ spring:
 
 keycloak:
   auth-server-url: https://sso.sad-waterdeer.com/auth
-  realm: MY
+  realm: TEST
   bearer-only: true
   resource: kanban-backend
   ssl-required: none
   credentials:
-    secret: keycloak_secret
+    secret: tOZGJnUHBJULRdCuAOZ5lmPAzBMqnQMK

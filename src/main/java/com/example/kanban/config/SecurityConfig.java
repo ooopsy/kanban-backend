@@ -39,7 +39,9 @@ public class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
 	@Bean
     public CorsConfigurationSource corsConfigurationSource() {
         final CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins( Arrays.asList("http://kanban.sad-waterdeer.com", "https://kanban.sad-waterdeer.com"));
+        configuration.setAllowedOrigins( Arrays.asList("http://kanban.sad-waterdeer.com", 
+        		"https://kanban.sad-waterdeer.com", 
+        		"http://localhost:5173"));
         configuration.setAllowedMethods(Arrays.asList("HEAD",
                 "GET", "POST", "PUT", "DELETE", "PATCH"));
         configuration.setAllowCredentials(true);
