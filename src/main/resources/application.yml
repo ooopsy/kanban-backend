@@ -1,0 +1,20 @@
+server:
+  port: 80
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: user
+    password: password
+    url: jdbc:mysql://localhost:3307/kanban?serverTimezone=Asia/Seoul&useUnicode=true&characterEncoding=utf8
+  jpa: 
+    hibernate:
+      ddl-auto: update
+
+keycloak:
+  auth-server-url: https://sso.sad-waterdeer.com/auth
+  realm: MY
+  bearer-only: true
+  resource: kanban-backend
+  ssl-required: none
+  credentials:
+    secret: keycloak_secret
